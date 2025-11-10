@@ -77,4 +77,4 @@ class WordCounterFeature:
         print(f"Rata-rata Panjang Kata: {avg_word_length:.1f} karakter")
         print(f"{'='*50}\n")
         
-        input("Tekan Enter untuk lanjut...")
+        input("Tekan Enter untuk lanjut...")
