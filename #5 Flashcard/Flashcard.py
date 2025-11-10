@@ -1,7 +1,9 @@
-class flashcardFeature:
-     
+# flashcard_module.py
+from datetime import datetime
+
+class FlashcardFeature:
+    
     def flashcard_menu(self):
-        """Menu FlashCard"""
         while True:
             self.clear_screen()
             print("=" * 50)
@@ -28,7 +30,6 @@ class flashcardFeature:
                 break
     
     def create_flashcard(self):
-        """Buat flashcard baru"""
         self.clear_screen()
         print("=== BUAT FLASHCARD BARU ===")
         category = input("Kategori/Topik: ")
@@ -57,7 +58,6 @@ class flashcardFeature:
         input("\nTekan Enter untuk lanjut...")
     
     def study_flashcard(self):
-        """Belajar dengan flashcard"""
         if not self.flashcards:
             print("\nBelum ada flashcard tersedia!")
             input("Tekan Enter untuk lanjut...")
@@ -93,7 +93,6 @@ class flashcardFeature:
         input("\nTekan Enter untuk lanjut...")
     
     def list_flashcards(self):
-        """Lihat semua flashcard"""
         self.clear_screen()
         print("=== DAFTAR FLASHCARD ===")
         if not self.flashcards:
@@ -106,7 +105,6 @@ class flashcardFeature:
         input("\nTekan Enter untuk lanjut...")
     
     def delete_flashcard(self):
-        """Hapus flashcard"""
         if not self.flashcards:
             print("\nBelum ada flashcard tersedia!")
             input("Tekan Enter untuk lanjut...")
