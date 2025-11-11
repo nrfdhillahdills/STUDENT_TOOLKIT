@@ -48,6 +48,9 @@ class QuizFeature:
                 options.append(opt)
             
             correct = input("Jawaban benar (A/B/C/D): ").upper()
+            if correct not in ['A', 'B', 'C', 'D']:
+                print("Jawaban tidak valid, soal diabaikan.")
+                continue    
             
             questions.append({
                 'question': question,
